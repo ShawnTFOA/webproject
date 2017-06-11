@@ -1,22 +1,75 @@
 <html>
-    <style>
-        body{
-            color:white;
-            background-color:black;
-        }
-        #back {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;   
-            width: 145px;
-            font-size: 20px;
-            background: white;
-            color: black;
-        }
-    </style>
-    <button class="btn" id="back" onclick="javascript:location.href='https://yuweichang.github.io/webproject/'">回到主頁面</button>
-    <br>
-    <h1 align="center">ＭＬＢ</h1>
-    <br>
-    <body></body>
+   <style style="text/css">
+      a{text-decoration:none;}
+      a:hover{text-decoration:underline;}
+      body
+      {
+          background-color: black;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+      }
+      .h1
+      {
+         font-size:60px;
+         font-family:DFKai-sb;
+         color:white;
+         text-align:center;
+      }
+      .img
+      {
+         border-color: #FAEBD7;
+         border-width: 5px;
+         border-style: solid;
+         border-radius: 10px;
+      }
+      .p
+      {
+         font-size:30px;
+         font-family:DFKai-sb;
+         color:white;
+      }
+      .a
+      {
+         font-size:20px;
+         font-family:DFKai-sb;
+         color:white;
+      }
+   </style>
+   <head style="background-color:black";>
+      <title>美國職籃 N B A</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+         <h1 class="h1"><strong>★★★美國職籃 N B A ★★★<br><font size="8"; color="white";>NBA Offical Taiwan : </font><a href="http://www.nba.com/?53"><font size="8"; color="yellow";>NBA</font></a></strong></h1>
+         <marquee onMouseOver="this.stop()" onMouseOut="this.start()" direction="right" behavior="alternate" scrollamount="7" bgcolor="#F0FFF0">
+           <img src="data:image/png;base64,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" width="200px" height="150px">
+           <img src="http://cdn.playbuzz.com/cdn/8e661243-1a35-4d1e-9405-416249965223/20e48841-2f63-450f-b745-371222100cd9_560_420.jpg" width="150px" height="150px">
+           <img src="http://vignette3.wikia.nocookie.net/logopedia/images/f/fa/558925_378150812217498_1038928913_n.jpg/revision/latest?cb=20150910163506" width="150px" height="150px">
+           <img src="https://lh5.ggpht.com/Y9cG2XlxsaTUP1wGMHiOGjpDSGmcczHS3EABEN8s_ORvUk4n57Z_XQwuC0GAYX-O91A=w300" width="150px" height="150px">
+           <img src="https://tzanabet.files.wordpress.com/2017/04/2015-nba-playoffs-ticketmaster.png?w=1200" width="150px" height="150px">
+           <img src="http://news.meridianbet.com/wordpress/wp-content/uploads/2015/05/eastern_conference_finals-550x300.gif" width="150px" height="150px">
+           <img src="https://i1.wp.com/www.sportsrageous.com/wp-content/uploads/2016/05/western-conference-finals-logo.jpg?resize=900%2C563&ssl=1" width="150px" height="150px">
+         </marquee>
+      <div style="background-color:black; height:50px"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+         <input type="button" value="球 隊 資 訊" style="width:200px; height:50px; font-size:20px; border:3px orange double; background-color:CCBBFF;" onclick="location.href='https://tw.global.nba.com/teamindex/'"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+         <input type="button" value="規 則 影 片" style="width:200px; height:50px; font-size:20px; border:3px orange double; background-color:CCBBFF;" onclick="location.href='https://www.youtube.com/watch?v=wYjp2zoqQrs&feature=youtu.be'"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+         <input type="button" value="精 彩 影 片" style="width:200px; height:50px; font-size:20px; border:3px orange double; background-color:CCBBFF;" onclick="location.href='https://www.youtube.com/watch?v=FgXlkt2rvHw'"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+         <input type="button" value="簡 單 介 紹" style="width:200px; height:50px; font-size:20px; border:3px orange double; background-color:CCBBFF;" onclick="location.href='http://library.taiwanschoolnet.org/cyberfair2009/wtjh/theme_3.htm'">
+      </div>
+   </head>
+   <body>
+      <div style="top:332px; right:10px; position:absolute; background:black; width:353px; color:white;">
+         <p><font size="6" color="yellow" face="DFKai-sb"><strong>☆簡介☆</strong></font></p>
+         <p><font color="white">國家籃球協會（英語：National Basketball Association，縮寫為NBA）是北美的男子職業籃球組織，擁有30支球隊，
+            分屬兩個分區：東區和西區；而每個聯盟各由三個分組組成，每個分組有五支球隊。30 支球隊當中有29支位於美國，另外
+            一支來自加拿大的多倫多。其賽事一般直接稱作NBA、美國籃球聯賽或美國職業籃球聯賽（簡稱「美職籃」）。NBA正式賽季
+            於每年11月的第一個星期的星期二開始，分為例行賽和季後賽兩部分。例行賽為循環賽制，每支球隊都要完成82場比賽；例
+            行賽到次年的4月結束，每個聯盟的前八名將有資格進入接下來進行的季後賽。季後賽採用七戰四勝賽制，共分四輪；季後賽
+            的最後一輪也稱為總決賽，由兩個聯盟的冠軍爭奪NBA的最高榮譽——總冠軍。整個NBA賽季當中，例行賽完結之後分區冠軍不
+            設獎盃，只給予得獎球隊錦旗一個，但聯盟冠軍及總冠軍均設有獎盃加錦旗。NBA前身是1946年成立的美國籃球協會（BAA)
+            ，1949年改為現名。協會總部位於紐約市第五大道645號的奧林匹克塔大廈，現任總裁為亞當·蕭華。 NBA是目前世界上最高
+            水準的職業籃球賽事，也是北美四大職業運動之一。</p></div>
+      <img src="http://img05.jdzj.com/oledit/UploadFile/news2014c/image/20140620/20140620093337543754.jpg" style="display:block; margin:auto;">
+   </body>
 </html>
+
